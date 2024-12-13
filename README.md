@@ -1,17 +1,13 @@
-# IDS706 Final Project
-# Data Engineering Final Project: Movie Trends & Analytics Platform
+# IDS706 Individual Project 3: Movie Trends & Analytics Platform
 
 [![Build and deploy container app to Azure Web App - ids706](https://github.com/bionicotaku/IDS706_Final_Project/actions/workflows/cicd.yml/badge.svg)](https://github.com/bionicotaku/IDS706_Final_Project/actions/workflows/cicd.yml)
 
-## Team Members:
-- Han Li
-- Jingxuan Li
-- Leo Chen
-- Kaisen Yao
+## Project Description:
+This project is a modified version of the group final project, repurposed as an individual assignment to build a publicly accessible, auto-scaling containerized web application using AWS Services and Flask. The group project focused on analyzing movie trends using Flask, PostgreSQL, and Azure, while this individual project transitions to a wider range of application. It demonstrates containerization, auto-scaling, and cloud deployment, applying Flask knowledge from previous lessons in a scalable, real-world context. This modification emphasizes scalability and efficiency in deployment for dynamic traffic loads.
 
-## Links
-- Website: [https://www.ids706final.dingzhen.us/](https://www.ids706final.dingzhen.us/)
-- Demo Video: [https://youtu.be/1AW61ni-LEU](https://youtu.be/1AW61ni-LEU)
+## Links:
+- **Website**: [https://www.ids706final.dingzhen.us/](https://www.ids706final.dingzhen.us/)
+- **Introductory video**: [www.youtube.com](https://youtu.be/KIYtC2t5Xm0)
 
 ## Project Description:
 This project incorporated all the skills we learned in Data Engineering to create an application that offers services for analyzing movie popularity and genre trends over time. Users can input a start and end year to explore how different movie genres have evolved in popularity. Additionally, users can enter a specific year to view the most and least popular movies based on TMDB's popularity scores. The site also features an AI chat assistant for interactive user engagement using X.AI API. The following technologies are used for this project:
