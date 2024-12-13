@@ -10,7 +10,7 @@ This project is a modified version of the group final project, repurposed as an 
 - **Introductory video**: [www.youtube.com](https://youtu.be/KIYtC2t5Xm0)
 
 ## Project Description:
-This project incorporated all the skills we learned in Data Engineering to create an application that offers services for analyzing movie popularity and genre trends over time. Users can input a start and end year to explore how different movie genres have evolved in popularity. Additionally, users can enter a specific year to view the most and least popular movies based on TMDB's popularity scores. The site also features an AI chat assistant for interactive user engagement using X.AI API. The following technologies are used for this project:
+This project applies the skills acquired in Data Engineering to develop an application that analyzes movie popularity and genre trends over time. Users can specify a start and end year to explore how the popularity of different movie genres has evolved. Additionally, they can input a specific year to view the most and least popular movies based on TMDB’s popularity scores. The platform also includes an AI chat assistant, powered by the X.AI API, for interactive user engagement. The project utilizes the following technologies:
 
 - ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 - ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) ![SQL](https://img.shields.io/badge/sql-%2307405e.svg?style=for-the-badge&logo=postgresql&logoColor=white)
@@ -93,8 +93,7 @@ Here are the test results:
 
 ![total_requests_per_second_1733983092 742](https://github.com/user-attachments/assets/73f8beaf-ea43-4d1b-bfd2-782fb321bedb)
 
-Due to our Azure Student Subscription limitations, we could only use Standard S3 SKU with a maximum of 10 instances. Each instance was configured with 9 workers and 4 threads to achieve maximum concurrent capacity.
-As shown in these graphs, the peak requests per second reached around 1,600, with a stable maximum load of approximately 1,200. When reaching 10,000 users per second, the 95th percentile latency exceeded 60,000ms, indicating maximum load capacity. On average, 50% of the requests had latency within 500ms.
+Due to limitations with our Azure Student Subscription, we were restricted to using the Standard S3 SKU with a maximum of 10 instances. Each instance was configured with 9 workers and 4 threads to maximize concurrent capacity. As illustrated in the graphs, the system achieved a peak of approximately 1,600 requests per second, with a stable maximum load of around 1,200 requests per second. At a load of 10,000 users per second, the 95th percentile latency exceeded 60,000ms, signaling the system’s maximum capacity. On average, 50% of the requests experienced a latency of 500ms or less.
 
 ## Local Deployment
 Note that you need to create a `.env` file beforehand, containing the `XAI_API_KEY` environment variable to use the Grok3 large language model chat functionality.
@@ -148,15 +147,14 @@ This visualization highlights the standout successes and underperformers in term
 <img width="1186" alt="Screenshot 2024-12-11 at 23 03 19" src="https://github.com/user-attachments/assets/6e91859d-f776-4ebf-a7d9-0c782cdd2f25" />
 
 ## Chat Interface Page:
-This page is the chat interface where users can chat with the AI chat assistant. The chat assistant is built using X.AI API. The chat interface is built using Flask and HTML.
+This page serves as the primary interface for users to interact with the AI chat assistant, which is powered by the X.AI API. The interface is designed using Flask and HTML to provide a seamless and user-friendly experience.
 
 ## Microservice
 In this project, Flask serves as a microservice framework to build and deploy the web application for movie trend analysis and AI chat assistance. Flask, being lightweight, is ideal for creating small-scale microservices. It manages routing, handling requests for movie genre and popularity analysis, and returns data in JSON format. The application integrates with HTML templates to generate dynamic web pages, using JavaScript and Chart.js for data visualization. Flask is containerized using Docker, ensuring consistent deployment across environments, and is deployed on platforms like Azure Web App Services. This microservice architecture allows for modular, scalable design, facilitating future enhancements and maintenance.
 
 ## Data Engineering
-In our project, we use Flask to create API endpoints and psycopg2 to connect to and query the PostgreSQL database using SQL, with PostgreSQL serving as the backend for data storage and analysis. Additionally, we use the ast module to parse strings into Python expressions. These technologies collectively support extracting and analyzing movie data from the database and providing data services through APIs.
+Flask is utilized as a lightweight microservice framework to build and deploy the web application for movie trend analysis and AI chat assistance. It handles routing, processes requests for movie genre and popularity analysis, and delivers data in JSON format. HTML templates are integrated with Flask to create dynamic web pages, while JavaScript and Chart.js are used for data visualization. The application is containerized using Docker for consistent deployment across environments and deployed on platforms like Azure Web App Services. This microservice-based architecture ensures modularity, scalability, and ease of future enhancements and maintenance.
 
 ## AI Tools
-1. ChatGPT
-
-We utilized ChatGPT to assist in debugging and optimizing our frontend UI. By leveraging its capabilities, we were able to identify and resolve issues more efficiently, as well as enhance the overall user interface design to ensure a more intuitive and visually appealing experience for our users.
+1. ChatGPT: Used to debug and optimize the frontend UI, ChatGPT helped identify and resolve issues efficiently, improving the user interface design for a more intuitive and visually appealing experience.
+2. Claude.AI: Utilized for enhancing the design and functionality of the application, ensuring smoother interactions and addressing backend optimization challenges.
